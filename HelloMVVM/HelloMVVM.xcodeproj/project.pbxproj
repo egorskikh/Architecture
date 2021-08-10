@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		14C368AC26C2C9CB00A109E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368AB26C2C9CB00A109E1 /* AppDelegate.swift */; };
 		14C368AE26C2C9CB00A109E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368AD26C2C9CB00A109E1 /* SceneDelegate.swift */; };
-		14C368B026C2C9CB00A109E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368AF26C2C9CB00A109E1 /* ViewController.swift */; };
-		14C368B326C2C9CB00A109E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C368B126C2C9CB00A109E1 /* Main.storyboard */; };
+		14C368B026C2C9CB00A109E1 /* HelloController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368AF26C2C9CB00A109E1 /* HelloController.swift */; };
 		14C368B526C2C9D500A109E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C368B426C2C9D500A109E1 /* Assets.xcassets */; };
 		14C368B826C2C9D500A109E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C368B626C2C9D500A109E1 /* LaunchScreen.storyboard */; };
+		14C368CA26C2CEB400A109E1 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368C926C2CEB400A109E1 /* HelloView.swift */; };
+		14C368CC26C2D16600A109E1 /* HelloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368CB26C2D16600A109E1 /* HelloModel.swift */; };
+		14C368CE26C2D3FB00A109E1 /* HelloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C368CD26C2D3FB00A109E1 /* HelloViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14C368A826C2C9CB00A109E1 /* HelloMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C368AB26C2C9CB00A109E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C368AD26C2C9CB00A109E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14C368AF26C2C9CB00A109E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14C368B226C2C9CB00A109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14C368AF26C2C9CB00A109E1 /* HelloController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloController.swift; sourceTree = "<group>"; };
 		14C368B426C2C9D500A109E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14C368B726C2C9D500A109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14C368B926C2C9D500A109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C368C926C2CEB400A109E1 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		14C368CB26C2D16600A109E1 /* HelloModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloModel.swift; sourceTree = "<group>"; };
+		14C368CD26C2D3FB00A109E1 /* HelloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,89 @@
 		14C368AA26C2C9CB00A109E1 /* HelloMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				14C368AB26C2C9CB00A109E1 /* AppDelegate.swift */,
-				14C368AD26C2C9CB00A109E1 /* SceneDelegate.swift */,
-				14C368AF26C2C9CB00A109E1 /* ViewController.swift */,
-				14C368B126C2C9CB00A109E1 /* Main.storyboard */,
-				14C368B426C2C9D500A109E1 /* Assets.xcassets */,
-				14C368B626C2C9D500A109E1 /* LaunchScreen.storyboard */,
-				14C368B926C2C9D500A109E1 /* Info.plist */,
+				14C368C326C2CE3E00A109E1 /* HelloMVVM */,
+				14C368BF26C2CC1A00A109E1 /* App */,
 			);
 			path = HelloMVVM;
+			sourceTree = "<group>";
+		};
+		14C368BF26C2CC1A00A109E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				14C368C226C2CC4700A109E1 /* LaunchScreen */,
+				14C368C126C2CC3200A109E1 /* Supporting Files */,
+				14C368C026C2CC2300A109E1 /* App Delegates */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		14C368C026C2CC2300A109E1 /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				14C368AB26C2C9CB00A109E1 /* AppDelegate.swift */,
+				14C368AD26C2C9CB00A109E1 /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		14C368C126C2CC3200A109E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14C368B926C2C9D500A109E1 /* Info.plist */,
+				14C368B426C2C9D500A109E1 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C368C226C2CC4700A109E1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				14C368B626C2C9D500A109E1 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		14C368C326C2CE3E00A109E1 /* HelloMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				14C368C726C2CE6E00A109E1 /* Controller */,
+				14C368C626C2CE6000A109E1 /* View */,
+				14C368C526C2CE5700A109E1 /* ViewModel */,
+				14C368C426C2CE4C00A109E1 /* Model */,
+			);
+			path = HelloMVVM;
+			sourceTree = "<group>";
+		};
+		14C368C426C2CE4C00A109E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14C368CB26C2D16600A109E1 /* HelloModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C368C526C2CE5700A109E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14C368CD26C2D3FB00A109E1 /* HelloViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14C368C626C2CE6000A109E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14C368C926C2CEB400A109E1 /* HelloView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14C368C726C2CE6E00A109E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14C368AF26C2C9CB00A109E1 /* HelloController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +204,6 @@
 			files = (
 				14C368B826C2C9D500A109E1 /* LaunchScreen.storyboard in Resources */,
 				14C368B526C2C9D500A109E1 /* Assets.xcassets in Resources */,
-				14C368B326C2C9CB00A109E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C368B026C2C9CB00A109E1 /* ViewController.swift in Sources */,
+				14C368B026C2C9CB00A109E1 /* HelloController.swift in Sources */,
+				14C368CE26C2D3FB00A109E1 /* HelloViewModel.swift in Sources */,
+				14C368CA26C2CEB400A109E1 /* HelloView.swift in Sources */,
 				14C368AC26C2C9CB00A109E1 /* AppDelegate.swift in Sources */,
+				14C368CC26C2D16600A109E1 /* HelloModel.swift in Sources */,
 				14C368AE26C2C9CB00A109E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +226,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		14C368B126C2C9CB00A109E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14C368B226C2C9CB00A109E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14C368B626C2C9D500A109E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68FXT4UH73;
-				INFOPLIST_FILE = HelloMVVM/Info.plist;
+				INFOPLIST_FILE = "HelloMVVM/App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68FXT4UH73;
-				INFOPLIST_FILE = HelloMVVM/Info.plist;
+				INFOPLIST_FILE = "HelloMVVM/App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
